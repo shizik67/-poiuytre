@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url(../fonts/PlayfairDisplay.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Alt;
+    src: url(../fonts/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: AltSemi;
+    src: url(../fonts/MontserratAlternates-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: AltBold;
+    src: url(../fonts/MontserratAlternates-Bold.ttf);
+}
+
+@font-face {
+    font-family: AltItalic;
+    src: url(../fonts/MontserratAlternates-Italic.ttf);
+}
+
+body {
+    background: #000000;
+    color: #ffffff;
+}
+
+.container {
+    width: 1660px;
+    margin: 0 auto;
+}
+
+/* хэдер */
+.head {
+    background-color:#000000;
+    border-radius: 50px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding: 30px 20px 20px 20px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 999;
+
+}
+
+.head img {
+    width: 140px;
+    height: 40px;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    margin-top: 14px;
+    gap: 33px;
+}
+
+nav a {
+    font-family: 'AltSemi';
+    color: #ffffff;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #B7FF00;
+}
+/* хэдер конец */
+
+/* главный экран */
+.hero {
+    display: flex;
+    height: 925px;
+}
+
+.hero-left {
+    margin-left: 128px;
+    width: 787px;
+}
+
+.hero-img {
+    margin-top: 123px;
+}
+
+.logo {
+    margin-top: 161px;
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo img {
+    margin-top: 16px;
+    width: 400px;
+    height: 100px;
+}
+
+.world {
+    font-family: 'Playfair';
+    font-weight: 400;
+    margin: -18px 0 0 108px;
+    height: 123px;
+    font-size: 100px;
+}
+
+.world span {
+    color: #B7FF00;
+}
+
+.hero-left p {
+    font-family: 'Alt';
+    width: 494px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 29px;
+    margin-top: 62px;
+}
+
+.btn1 {
+    font-family: 'Alt';
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    background: #D9D9D9;
+    border: 3px solid #D9D9D9;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1:hover {
+    background: #000000;
+    color: #ffffff;
+    line-height: 48px;
+    border: 3px solid #ffffff;
+}
+
+.btn2 {
+    font-family: 'Alt';
+    width: 200px;
+    height: 50px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 16px;
+    color: #B7FF00;
+    background: #000000;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+}
+
+.btn2:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #B7FF00;
+}
+/* главный экран конец */
+
+/* строка */
+.strip {
+    display: flex;
+    height: 81px;
+    padding: 20px 0 0 19px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+.strip span {
+    flex-shrink: 0;
+    margin-right: 40px;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.strip .g {
+    color: #B7FF00;
+}
+/* строка конец */
+
+/* альбомы */
+.title {
+    font-family: 'Playfair';
+    font-weight: 400;
+    margin: 140px 0 0 130px;
+    font-size: 48px;
+}
+
+.top {
+    display: flex;
+    margin: 40px 0 0 130px;
+}
+
+.top-text {
+    margin-left: 114px;
+}
+
+.top-text h3 {
+    font-family: 'MontserratBold';
+    font-weight: 400;
+    margin: 6px 0 0 109px;
+    font-size: 90px;
+    color: #B7FF00;
+}
+
+.top-text p {
+    font-family: 'Montserrat';
+    margin-top: 15px;
+    width: 707px;
+    font-size: 30px;
+    letter-spacing: -1.5px;
+}
+
+.big {
+    display: block;
+    margin: 20px 0 0 141.6px;
+    width: 354px;
+    height: 85px;
+    line-height: 79px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    letter-spacing: -1.1px;
+    color: #B7FF00;
+    background: #000000;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+}
+
+.big:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #B7FF00;
+}
+
+.row {
+    display: flex;
+    margin-left: 130px;
+}
+
+.card {
+    width: 395px;
+}
+
+.pic img {
+    width: 395px;
+    height: 405px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.name {
+    font-family: 'Montserrat';
+    text-decoration: underline;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.name:hover {
+    color: #B7FF00;
+}
+
+.year {
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #575757;
+}
+
+.r1 {
+    margin-top: 151px;
+    gap: 104px;
+}
+
+.r2 {
+    gap: 105px;
+    margin-top: 50px;
+}
+/* альбомы конец */
+
+/* синглы */
+.single {
+    display: flex;
+    margin: 195px 0 0 128px;
+}
+
+.s-left {
+    width: 676px;
+}
+
+.title2 {
+    font-family: 'Playfair';
+    font-weight: 400;
+    width: 430px;
+    font-size: 48px;
+    letter-spacing: -2.4px;
+}
+
+.s-left img {
+    margin: 40px 0 0 2px;
+}
+
+.s-right {
+    margin-left: 50px;
+}
+
+.s-name {
+    font-family: 'MontserratBold';
+    font-weight: 400;
+    margin: 26px 0 0 52px;
+    font-size: 80px;
+    color: #B7FF00;
+}
+
+.s-remix {
+    font-family: 'AltBold';
+    font-weight: 400;
+    margin: -20px 0 0 209px;
+    font-size: 80px;
+    color: #676767;
+}
+
+.s-p1 {
+    font-family: 'Montserrat';
+    margin-top: 38px;
+    width: 655px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.s-p2 {
+    font-family: 'Montserrat';
+    margin-top: 25px;
+    width: 624px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.big2 {
+    display: block;
+    margin: 63px 0 0 148px;
+    width: 294px;
+    height: 71px;
+    line-height: 65px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    letter-spacing: -1.1px;
+    color: #B7FF00;
+    background: #000000;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+}
+
+.big2:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #B7FF00;
+}
+
+.r3 {
+    margin-top: 148px;
+    gap: 105px;
+}
+
+.r4 {
+    margin-left: 131px;
+    gap: 105px;
+    margin-top: 50px;
+}
+/* синглы конец */
+
+/* об артисте */
+.about {
+    display: flex;
+    margin: 140px 0 0 125px;
+}
+
+.about-text {
+    margin-left: 26px;
+}
+
+.about-text h2 {
+    font-family: 'MontserratBold';
+    font-weight: 400;
+    margin: 31px 0 0 110px;
+    font-size: 64px;
+    letter-spacing: -3.2px;
+}
+
+.about-text h2 span {
+    color: #B7FF00;
+}
+
+.a-p1 {
+    font-family: 'Montserrat';
+    margin: 28px 0 0 22px;
+    width: 647px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.a-p2 {
+    font-family: 'Montserrat';
+    margin-top: 24px;
+    width: 733px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.44px;
+}
+/* об артисте конец */
+
+/* галерея */
+.gal {
+    display: flex;
+    margin: 140px auto 0 auto;
+    width: 1920px;
+    height: 562px;
+}
+
+.g1 {
+    width: 344px;
+}
+
+.g1 .tb {
+    margin-top: 14px;
+}
+
+.g2 {
+    margin-left: 14px;
+}
+
+.g3 {
+    margin-left: 14px;
+    width: 757px;
+}
+
+.g3row {
+    display: flex;
+    gap: 15px;
+}
+
+.g3 .tw {
+    margin-top: 14px;
+}
+
+.g4 {
+    margin: 6px 0 0 12px;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.tile:hover img {
+    filter: grayscale(0%);
+}
+
+.ta,
+.tb,
+.tc,
+.td,
+.tw,
+.tp,
+.tr {
+    overflow: hidden;
+}
+
+.ta {
+    width: 344px;
+    height: 280px;
+}
+
+.tb {
+    width: 344px;
+    height: 268px;
+}
+
+.tp {
+    width: 432px;
+    height: 562px;
+}
+
+.tc {
+    width: 353px;
+    height: 268px;
+}
+
+.td {
+    width: 389px;
+    height: 268px;
+}
+
+.tw {
+    width: 757px;
+    height: 280px;
+}
+
+.tr {
+    width: 347px;
+    height: 562px;
+}
+/* галерея конец */
+
+/* архив */
+.line {
+    height: 1px;
+    background: #676767;
+}
+
+.l1 {
+    margin-top: 55px;
+}
+
+.l2 {
+    margin: 139px 0 0 21px;
+}
+
+.l6,
+.l7 {
+    margin-left: 16px;
+}
+
+.l8 {
+    margin-left: 32px;
+}
+
+.trow {
+    display: flex;
+    align-items: center;
+    width: 1660px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.trow .year {
+    font-family: 'AltItalic';
+    width: 200px;
+    font-size: 30px;
+    color: #B7FF00;
+}
+
+.trow .name {
+    font-family: 'Alt';
+    width: 400px;
+    font-size: 24px;
+}
+
+.trow .desc {
+    font-family: 'Alt';
+    width: 791px;
+    font-size: 22px;
+}
+/* архив конец */
+
+/* футер */
+.foot {
+    display: flex;
+    align-items: flex-start;
+    height: 318px;
+    padding-top: 59px;
+}
+
+.f-logo {
+    margin: 47px 0 0 131px;
+    width: 422px;
+    height: 113px;
+}
+
+.f-links {
+    margin-left: 155px;
+    width: 200px;
+}
+
+.f-links a {
+    display: block;
+    margin-bottom: 25px;
+    font-family: 'AltSemi';
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.f-links a:hover {
+    color: #B7FF00;
+}
+
+.f-icons {
+    display: flex;
+    margin: 86px 0 0 74px;
+    gap: 55px;
+}
+
+.f-icons img {
+    width: 45px;
+    height: 45px;
+}
+/* футер конец */
